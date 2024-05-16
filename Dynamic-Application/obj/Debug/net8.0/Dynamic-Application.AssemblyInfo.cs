@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dynamic-Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b061964d067a958c0383fdef0e7fb6d3123b2dcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dynamic-Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dynamic-Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

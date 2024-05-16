@@ -60,3 +60,4 @@ D:\dotnet-task\Dynamic-Application\Dynamic-Application\obj\Debug\net8.0\refint\D
 D:\dotnet-task\Dynamic-Application\Dynamic-Application\obj\Debug\net8.0\Dynamic-Application.pdb
 D:\dotnet-task\Dynamic-Application\Dynamic-Application\obj\Debug\net8.0\Dynamic-Application.genruntimeconfig.cache
 D:\dotnet-task\Dynamic-Application\Dynamic-Application\obj\Debug\net8.0\ref\Dynamic-Application.dll
+D:\dotnet-task\Dynamic-Application\Dynamic-Application\obj\Debug\net8.0\Dynamic-Application.sourcelink.json

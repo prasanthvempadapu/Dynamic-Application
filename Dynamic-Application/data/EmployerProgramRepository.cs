@@ -51,8 +51,14 @@ namespace Dynamic_Application.data
 
         public async Task<EmployerProgram> UpdateEmployerAsync(EmployerProgram employerProgram)
         {
-            var response = await _taskContainer.ReplaceItemAsync(employerProgram, employerProgram.Id);
+            var response = await _taskContainer.ReplaceItemAsync(employerProgram, employerProgram.Id,new PartitionKey(employerProgram.ProgramTitle));
             return response.Resource;
+        }
+
+        public async Task DeleteEmployerProgramAsync(string programId,string programTitle)
+        {
+            await _taskContainer.DeleteItemAsync<EmployerProgram>(programId, new PartitionKey(programTitle));
+
         }
 
     }

@@ -39,6 +39,7 @@ builder.Services.AddSingleton((provider) =>
     return cosmosClient;
 });
 builder.Services.AddScoped<IEmployerProgramRepository, EmployerProgramRepository>();
+builder.Services.AddScoped<ICandidateApplicationRepository, CandidateApplicationRepository>();
 
 var app = builder.Build();
 

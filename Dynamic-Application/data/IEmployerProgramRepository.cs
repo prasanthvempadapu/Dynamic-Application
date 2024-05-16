@@ -6,7 +6,7 @@ namespace Dynamic_Application.data
     {
         Task<IEnumerable<EmployerProgram>> GetAllEmployerProgramAsync();
         Task<EmployerProgram> CreateEmployerProgramAsync(EmployerProgram employerProgram);
-        //Task DeleteEmployerProgramAsync(string programId);
+        Task DeleteEmployerProgramAsync(string programId,string programTitle);
         Task<EmployerProgram> GetEmployerByIdAsync(string programId);
         Task<EmployerProgram> UpdateEmployerAsync(EmployerProgram employerProgram);
 

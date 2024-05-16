@@ -62,5 +62,18 @@ namespace Dynamic_Application.Controllers
             var updatedTask = await _employerProgramRepository.UpdateEmployerAsync(task);
             return Ok(updatedTask);
         }
+
+        [HttpDelete("{programId}")]
+        public async Task<IActionResult> DeleteUser(string programId)
+        {
+            var existingUser = await _employerProgramRepository.GetEmployerByIdAsync(programId);
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            await _employerProgramRepository.DeleteEmployerProgramAsync(programId,existingUser.ProgramTitle);
+            return NoContent();
+        }
     }
 }
